@@ -1,0 +1,27 @@
+In T1
+T1 try to get RESOURCE_1
+T1 got RESOURCE_1
+T1 try to activate T2
+T1 return from activate_task(T2)
+T1 try to activate T3
+T1 return from activate_task(T3)
+T1 try to activate T4
+T1 return from activate_task(T4)
+T1 try to activate T5
+In T5
+T5 terminated
+T1 return from activate_task(T5)
+T1 try to release RESOURCE_1
+In T4
+T4 try to get RESOURCE_1
+T4 got RESOURCE_1
+T4 try to release RESOURCE_1
+T4 return from release_resource(RESOURCE_1)
+T4 terminated
+In T3
+T3 terminated
+In T2
+T2 terminated
+T1 return from release_resource(RESOURCE_1)
+T1 terminated
+In idle_task
